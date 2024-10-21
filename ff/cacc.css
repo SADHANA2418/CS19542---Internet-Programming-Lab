@@ -1,0 +1,87 @@
+/* General reset for body and html */
+/* General reset for body and html */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container for the two halves */
+.container-fluid {
+    width: 100%;
+    height: 100%; /* Full height of the viewport */
+    display: flex; /* Flexbox for the layout */
+}
+
+/* Style for the image half */
+.image-half {
+    width: 60%; /* Takes up half the screen */
+    background: url('photo-1550807014-1236e91b92d4.jpeg') no-repeat center center; /* Replace with the actual image path */
+    background-size: cover; /* Cover the whole area */
+}
+
+/* Form half styling */
+.form-half {
+    width: 50%; /* Takes up the other half */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
+}
+
+/* Styling for the form */
+.create-account-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for form */
+    padding: 40px; /* Space inside the form */
+    border-radius: 15px; /* Rounded corners */
+    color: rgb(114, 108, 108); /* Text color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    width: 100%; /* Full width of the form container */
+    max-width: 400px; /* Limit max width */
+}
+
+/* Form title styling */
+.form-title {
+    font-size: 2rem; /* Font size for the title */
+    text-align: center; /* Center the title */
+    margin-bottom: 30px; /* Space below the title */
+    font-family: 'Pacifico', cursive; /* Font style for the title */
+    color: #ffffff; /* Title color */
+}
+
+/* Form group styling for inputs */
+.form-group label {
+    color: rgb(245, 243, 243); /* Label color */
+    font-weight: bold; /* Bold label text */
+}
+
+.form-group input {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent input background */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    color: rgb(129, 127, 127); /* Input text color */
+}
+
+/* Placeholder text styling */
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter text for placeholder */
+}
+
+/* Form submit button styling */
+.btn-primary {
+    background-color: #642a0d94; /* Button background color */
+    border: none; /* No border */
+    padding: 12px 20px; /* Button padding */
+    font-size: 1.2rem; /* Button text size */
+    font-weight: bold; /* Button text weight */
+    text-transform: uppercase; /* Uppercase text for button */
+    border-radius: 25px; /* Rounded button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+    background-color: #ff4500; /* Darker button color on hover */
+    transform: scale(1.05); /* Slight enlarge on hover */
+}

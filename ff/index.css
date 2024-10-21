@@ -1,0 +1,94 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: url('bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; /* Prevent unwanted scroll bars */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(199, 190, 190, 0.169); 
+    pointer-events: none; /* Allow clicks to pass through the overlay */
+    z-index: 1; /* Lower z-index to ensure it doesn't cover clickable elements */
+}
+
+.website-title {
+    font-family: 'Pacifico', cursive; 
+    font-size: 4rem; 
+    text-align: center;
+    /* text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.9),
+        0 0 10px rgb(4, 68, 123), 
+        0 0 20px rgb(3, 78, 144); */
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.website-title:hover {
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 0, 1), 
+        0 0 30px rgba(255, 255, 0, 1),
+        0 0 40px rgba(255, 255, 0, 1);
+    transform: scale(1.05); 
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+    position: relative; /* Ensure buttons are positioned correctly */
+    z-index: 2; /* Above the overlay */
+}
+
+.btn {
+    margin: 5px; 
+    font-size: 1.2rem; 
+    padding: 10px 30px; 
+    border: 2px solid transparent; 
+    border-radius: 25px; 
+    background-color: transparent; 
+    color: #ffffff; 
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    pointer-events: auto; /* Ensure buttons can receive clicks */
+}
+
+.btn-primary {
+    border-color: #ecbe9d; /* Border color for primary button */
+}
+
+.btn-secondary {
+    border-color: #e4ac7d; /* Border color for secondary button */
+}
+
+.btn:hover {
+    background-color: rgba(0, 255, 0, 0.2); /* Light neon green background on hover */
+    color: white; /* Keep text white */
+    box-shadow: 0 0 10px #00ff00, /* Neon glow effect */
+                0 0 20px #00ff00,
+                0 0 30px #00ff00;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+#caccb{
+    margin: 5px; 
+    font-size: 1.2rem; 
+    padding: 10px 30px; 
+    border: 2px solid transparent; 
+    border-radius: 25px; 
+    background-color: transparent; 
+    color: #ffffff; 
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    pointer-events: auto; 
+    border-color: #ecbe9d;
+}
